@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--
+            _
+     __   _(_)_ __   ___
+     \ \ / / | '_ \ / __|
+      \ V /| | | | | (__
+       \_/ |_|_| |_|\___|
+
+    -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Solar Shed</title>
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+      }
+      p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+        font-size: 1em;
+      }
+      p {
+        text-wrap: pretty;
+      }
+      h1, h2 {
+        text-wrap: balance;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 1em 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      h1:before {
+        content: "# ";
+        color: #d65d02;
+      }
+      h2:before {
+        content: "## ";
+        color: #d65d02;
+      }
+      ul {
+        padding-left: 1em;
+      }
+      ul li::marker {
+        content: "* ";
+        color: #d65d02;
+      }
+      html {
+        background-color: #282828;
+      }
+      body {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1.4em;
+        max-width: 800px;
+        margin: 1em auto;
+        padding: 0 1em;
+        color: #ebdbb2;
+        font-family: "Inconsolata", monospace;
+      }
+      img {
+        margin: 1em 0;
+        display: block;
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body class="index">
+      <h1>Solar Shed 0.1</h1>
+      <p>
+        This website is hosted on an off-grid microserver located in a shed
+        with solar power and mobile connectivity.
+      </p>
+      <h2>Hardware</h2>
+      <ul>
+        <li>Victron Monocrystalline Panel 90W 12V</li>
+        <li>Victron Gel Battery 12V 60Ah</li>
+        <li>Victron MPPT Charge Controller 75V 15A</li>
+        <li>Raspberry Pi Zero W</li>
+        <li>Sixfab 4G/LTE Base HAT</li>
+        <li>Quectel EC25 Mini PCle 4G/LTE Module</li>
+      </ul>
+      <h2>Software</h2>
+      <ul>
+        <li>Debian 11 32-bit</li>
+        <li>Nginx</li>
+        <li>Tailscaled</li>
+        <li>Cloudflared</li>
+      </ul>
+      <img src="server.jpg" alt="microserver">
+  </body>
+</html>
