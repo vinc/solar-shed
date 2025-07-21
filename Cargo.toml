@@ -1,0 +1,12 @@
+[package]
+name = "victron"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.41", features = ["serde"] }
+hex = "0.4.3"
+serde_json = { version = "1.0.140", features = ["preserve_order"] }
+tokio = "1.46.1"
+tokio-stream = "0.1.17"
+victron_ble = "0.4.0"
